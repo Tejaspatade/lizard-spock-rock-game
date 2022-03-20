@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  background-color: #f3f9e3;
+
+  font-family: Rubik, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 62rem;
+
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 15px;
+  overflow: hidden;
+
+  background-color: #faf0ca;
+  color: #628b48;
+
+  position: relative;
+}
+
+/* Heading */
+.header {
+  padding: 2.4rem 4.8rem;
+
+  background: #6ab547;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 3rem;
+
+  color: #faf0ca;
+
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+/* Player Container */
+.player-container {
+  margin: 4.8rem 3.2rem 2.4rem 3.2rem;
+}
+
+#playerScore,
+#computerScore {
+  color: #f5b700;
+}
+
+/* <h2>s */
+.post {
+  margin-bottom: 2rem;
+
+  font-size: 2.4rem;
+}
+
+/* Fawesome Icons */
+.selections-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-solid {
+  font-size: 4.8rem;
+  color: #edd83d;
+
+  user-select: none;
+
+  transition: all 0.2s;
+}
+
+#player .fa-solid:hover {
+  cursor: pointer;
+  transform: scale(1.17);
+}
+
+/* JS Class */
+.selected {
+  transform: scale(1.17);
+  color: #6ab547;
+}
+
+.reset-icon {
+  margin-left: 3.2rem;
+
+  color: #f5b700;
+
+  font-size: 3.5rem;
+  cursor: pointer;
+
+  position: absolute;
+  top: 110px;
+  right: 35px;
+
+  transition: all 0.5s;
+}
+
+.reset-icon:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* Results Container */
+.result-container {
+  margin-bottom: 4.8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 3.2rem;
+  margin: unset;
+  margin-top: 20px;
+
+  color: #f5b700;
+}
+
+/* Info Link */
+.info-btn {
+  font-size: 3rem;
+
+  color: #f5b700;
+}
+
+/* Confetti */
+canvas {
+  position: fixed;
+}
+
+/* -------------------------- Info Page ---------------------- */
+.info-container {
+  font-size: 2.4rem;
+
+  color: #628b48;
+
+  padding: 3.2rem;
+}
+
+.quote {
+  margin-bottom: 1.2rem;
+}
+
+.quoter {
+  font-size: 1.8rem;
+  text-align: end;
+
+  color: #f5b700;
+}
+
+.yt-link:link,
+.yt-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+
+  color: #6ab547;
+}
+
+.yt-link:hover,
+.yt-link:active {
+  text-decoration: underline;
+}
+
+.link-container {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
