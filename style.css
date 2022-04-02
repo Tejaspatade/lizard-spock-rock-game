@@ -187,37 +187,42 @@ canvas {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 600px) {
-  .game-container {
-    height: 580px;
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 50%;
   }
 
-  h1 {
+  .game-container {
+    height: 58rem;
+    margin: 0 10px;
+  }
+
+  .heading {
     font-size: 24px;
   }
-
+  /* 
   .player-container {
     margin: 50px 0 25px 25px;
-  }
+  } */
 
   .far {
     margin-right: 20px;
   }
 
-  .reset-icon {
+  /* .reset-icon {
     margin-top: 25px;
     margin-left: 25px;
-  }
+  } */
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 400px) {
   .game-container {
-    height: 550px;
+    height: 55rem;
   }
 
-  h1 {
-    font-size: 22px;
+  .heading {
+    font-size: 2.2rem;
   }
 
   .player-container {
@@ -227,10 +232,10 @@ canvas {
   .far {
     font-size: 43px;
   }
-
+  /* 
   .reset-icon {
     margin-top: 15px;
-  }
+  } */
 
   .result-container {
     margin: 0 20px;
